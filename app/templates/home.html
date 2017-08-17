@@ -1,1 +1,7 @@
- <h1>Home Page</h1>
+<div class="sidebar">
+    <div class="sidebar-header">
+        <h3 class="sidebar-title">Chat Room Project</h3>
+    </div>
+    <div class="sidebar-body" ng-repeat="room in home.rooms"> {{room.$value}}
+    </div>
+</div>
