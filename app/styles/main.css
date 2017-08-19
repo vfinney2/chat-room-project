@@ -33,3 +33,9 @@ body {
 .sidebar-body {
   padding: 10px;
 }
+
+.new-room-btn {
+  border: 1px solid black;
+  padding: 1rem;
+  margin-left: 0.5rem
+}

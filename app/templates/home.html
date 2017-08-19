@@ -1,7 +1,8 @@
 <div class="sidebar">
     <div class="sidebar-header">
         <h3 class="sidebar-title">Chat Room Project</h3>
+      <button type="button" class="new-room" ng-click=home.addRoom('Room')>New Room</button>
     </div>
-    <div class="sidebar-body" ng-repeat="room in home.rooms"> {{room.$value}}
-    </div>
+    <div class="sidebar-body" ng-repeat="room in home.rooms"> {{room.roomName}}
+  </div>
 </div>

@@ -11,11 +11,11 @@
                  url: '/',
                  controller: 'HomeCtrl as home',
                  templateUrl: '/templates/home.html'
-             });
-     }
+            });
+        }
  
      angular
   
-         .module('chatRoomProject', ['ui.router', 'firebase'])
+         .module('chatRoomProject', ['ui.router', 'firebase', 'ui.bootstrap'])
          .config(config);
  })();
