@@ -39,3 +39,25 @@ body {
   padding: 1rem;
   margin-left: 0.5rem
 }
+
+.modal-box {
+    position:absolute;
+    width:350px;
+    top: 20%;
+    left: 60%;
+    margin-left: -200px;
+    margin-top: -40px;
+    padding: 6px;
+    border-width: 2px;
+    background-color: teal;
+    border-style: inset;
+    border-color: black;
+}
+
+.header-title {
+  color:azure;
+}
+
+.modal-prompt {
+  color: plum;
+}
