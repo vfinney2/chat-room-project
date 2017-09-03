@@ -1,5 +1,7 @@
 (function(){
-  function HomeCtrl (Room, $uibModal) {
+  function HomeCtrl (Room, Message, $cookies, $uibModal) {
+    this.currentRoom = null;
+    this.currentUser = $cookies.get('CurrentUser');
     this.rooms = Room.all;
       
         this.addRoom = function() {
@@ -10,11 +12,18 @@
             });
           
         }
-  
+        
+        this.createCurrentRoom = function (room) {
+           this.currentRoom = room;
+           this.messages = Message.getByRoomId(this.currentRoom.$id);
+                      console.log(this.messages);
+        
+        }
+
   }
 
   angular
     .module('chatRoomProject')
-    .controller('HomeCtrl', ['Room', '$uibModal', HomeCtrl]);
+    .controller('HomeCtrl', ['Room', 'Message', '$cookies', '$uibModal', HomeCtrl]);
 })();
 

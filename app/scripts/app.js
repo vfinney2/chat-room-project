@@ -22,7 +22,7 @@
  
      angular
   
-         .module('chatRoomProject', ['ui.router', 'firebase', 'ui.bootstrap'])
+         .module('chatRoomProject', ['ui.router', 'firebase', 'ui.bootstrap', 'ngCookies'])
          .config(config);
  })();
 
