@@ -86,7 +86,7 @@ body {
 
 .message-header {
   background-color: white;
-  padding: 0.5px;
+  padding: 5px;
 }
 
 .messages {
@@ -138,12 +138,8 @@ body {
 }
 
 .user-section {
-    background-color: darkgrey;
+    background-color: red;
     border-style: inset;
     border-color: black;
-    position: absolute;
-    right: 0;
-    top: 0;
-    left: 0;
-    position: absolute;
+    padding-left: 500px; 
 }

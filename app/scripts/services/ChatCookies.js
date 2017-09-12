@@ -3,21 +3,12 @@
     var currentUser = $cookies.get('ChatCurrentUser');
     if (!currentUser || currentUser === '') {
             $uibModal.open({
-                templateUrl: '/templates/username.html',
-                controller: function($scope, $cookies, $uibModalInstance){
-                  $scope.setuserName = function(currentUser) {
-                    if (currentUser && currentUser !== ''){
-                      $cookies.put('ChatCurrentUser', currentUser);
-                      $uibModalInstance.close(false);  
-                    } else {
-                      alert("Username is not valid");
-                    }
-                  };
-                }
-          
+                templateUrl: 'templates/username.html',
                 size: 'sm',
+                controller: 'LoginCtrl as user',
+                keyboard: false,
                 backdrop: 'static'
-      });
+            });
     }
   }
 
@@ -25,5 +16,6 @@
     .module('chatRoomProject')
     .run(['$cookies', '$uibModal', ChatCookies]);
 })();
+
 
 
