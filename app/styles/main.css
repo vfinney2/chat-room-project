@@ -102,9 +102,9 @@ body {
 
 .messages .sentAt {
     float: right;
-    padding-right: 20px;
+    padding-right: 10px;
     font-size: 70%;
-    width: 10%;
+    width: 5%;
 }
 
 .messages .username .sentAt {
@@ -116,7 +116,7 @@ body {
     padding-bottom: 5px;
     display: inline-block;
     background-color: lightgray;
-    width: 80.007%;
+    width: 86%;
     text-align: left;
     left: 0;
     right: 0;
